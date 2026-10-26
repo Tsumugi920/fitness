@@ -1,0 +1,143 @@
+{
+  "records": [
+    {
+      "id": "seed-01",
+      "date": "2026-10-25",
+      "type": "跑步",
+      "duration": 40,
+      "calories": 380,
+      "note": "晨跑 5 公里，配速稳定",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-02",
+      "date": "2026-10-25",
+      "type": "力量训练",
+      "duration": 50,
+      "calories": 300,
+      "note": "练胸 + 三头，渐进加重",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-03",
+      "date": "2026-10-24",
+      "type": "游泳",
+      "duration": 45,
+      "calories": 420,
+      "note": "自由泳 1000 米",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-04",
+      "date": "2026-10-23",
+      "type": "骑行",
+      "duration": 70,
+      "calories": 520,
+      "note": "夜骑环湖一圈",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-05",
+      "date": "2026-10-23",
+      "type": "瑜伽",
+      "duration": 30,
+      "calories": 120,
+      "note": "睡前拉伸，放松肩颈",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-06",
+      "date": "2026-10-22",
+      "type": "力量训练",
+      "duration": 60,
+      "calories": 350,
+      "note": "深蹲日 5x5",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-07",
+      "date": "2026-10-21",
+      "type": "跑步",
+      "duration": 35,
+      "calories": 330,
+      "note": "间歇跑 400 米 x 8 组",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-08",
+      "date": "2026-10-20",
+      "type": "篮球",
+      "duration": 80,
+      "calories": 600,
+      "note": "半场 3v3，打了四局",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-09",
+      "date": "2026-10-19",
+      "type": "瑜伽",
+      "duration": 40,
+      "calories": 150,
+      "note": "流瑜伽，微微出汗",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-10",
+      "date": "2026-10-18",
+      "type": "跑步",
+      "duration": 55,
+      "calories": 500,
+      "note": "长距离慢跑 8 公里",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-11",
+      "date": "2026-10-17",
+      "type": "力量训练",
+      "duration": 45,
+      "calories": 280,
+      "note": "背 + 二头，引体向上 5 组",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-12",
+      "date": "2026-10-16",
+      "type": "游泳",
+      "duration": 50,
+      "calories": 450,
+      "note": "蛙泳为主，最后一组冲刺",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-13",
+      "date": "2026-10-14",
+      "type": "骑行",
+      "duration": 90,
+      "calories": 650,
+      "note": "周末骑行 25 公里",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-14",
+      "date": "2026-10-12",
+      "type": "力量训练",
+      "duration": 55,
+      "calories": 320,
+      "note": "腿日：腿举 + 罗马尼亚硬拉",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    },
+    {
+      "id": "seed-15",
+      "date": "2026-10-11",
+      "type": "跑步",
+      "duration": 30,
+      "calories": 280,
+      "note": "轻松跑，恢复为主",
+      "createdAt": "2026-10-25T12:03:33.706Z"
+    }
+  ],
+  "goals": {
+    "weeklyMinutes": 480,
+    "weeklySessions": 8
+  }
+}
