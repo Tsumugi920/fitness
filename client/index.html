@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fitness 健身记录</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <h1>💪 fitness 健身记录</h1>
+      <p>记录每一次训练，见证每周进步</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats-grid">
+      <div class="card">
+        <div class="card-head">
+          <h2>本周统计</h2>
+          <span id="week-range" class="muted"></span>
+        </div>
+        <div class="week-totals">
+          <div class="total-item">
+            <span class="total-num" id="w-count">0</span>
+            <span class="total-label">训练次数</span>
+          </div>
+          <div class="total-item">
+            <span class="total-num" id="w-minutes">0</span>
+            <span class="total-label">总时长（分钟）</span>
+          </div>
+          <div class="total-item">
+            <span class="total-num" id="w-calories">0</span>
+            <span class="total-label">总消耗（千卡）</span>
+          </div>
+        </div>
+        <div id="week-chart" class="chart"></div>
+        <div class="goal-box">
+          <h3>目标进度</h3>
+          <div class="goal-row">
+            <div class="goal-label">
+              <span>每周时长目标</span>
+              <span id="goal-minutes-text">0 / 0 分钟</span>
+            </div>
+            <div class="progress"><div id="goal-minutes-bar" class="progress-bar bar-minutes"></div></div>
+          </div>
+          <div class="goal-row">
+            <div class="goal-label">
+              <span>每周次数目标</span>
+              <span id="goal-sessions-text">0 / 0 次</span>
+            </div>
+            <div class="progress"><div id="goal-sessions-bar" class="progress-bar bar-sessions"></div></div>
+          </div>
+          <div class="goal-edit">
+            <input id="goal-minutes-input" type="number" min="1" aria-label="每周时长目标（分钟）">
+            <input id="goal-sessions-input" type="number" min="1" aria-label="每周次数目标">
+            <button id="save-goals" type="button" class="btn btn-ghost">保存目标</button>
+          </div>
+          <p id="week-compare" class="muted"></p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h2>按运动类型汇总</h2></div>
+        <div id="type-stats" class="type-stats"></div>
+      </div>
+    </section>
+
+    <section class="panel-grid">
+      <div class="card" id="form-card">
+        <div class="card-head"><h2 id="form-title">添加训练记录</h2></div>
+        <form id="record-form">
+          <label>日期
+            <input id="f-date" type="date" required>
+          </label>
+          <label>运动类型
+            <select id="f-type" required></select>
+          </label>
+          <label>时长（分钟）
+            <input id="f-duration" type="number" min="1" max="1440" step="1" placeholder="如 45" required>
+          </label>
+          <label>消耗（千卡）
+            <input id="f-calories" type="number" min="0" step="1" placeholder="选填，如 350">
+          </label>
+          <label>备注
+            <input id="f-note" type="text" maxlength="100" placeholder="选填">
+          </label>
+          <div class="form-actions">
+            <button id="submit-btn" type="submit" class="btn btn-primary">添加记录</button>
+            <button id="cancel-edit" type="button" class="btn btn-ghost hidden">取消编辑</button>
+          </div>
+          <p id="form-error" class="error hidden"></p>
+        </form>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h2>训练记录</h2>
+          <div class="filter">
+            <label for="filter-type">按类型筛选</label>
+            <select id="filter-type">
+              <option value="all">全部</option>
+            </select>
+          </div>
+        </div>
+        <p id="list-summary" class="muted"></p>
+        <div id="record-list" class="record-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer muted">fitness 健身记录 · 前端由后端静态托管 · 数据保存在 server/data.json</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
